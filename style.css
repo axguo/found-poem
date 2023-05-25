@@ -74,8 +74,8 @@ li {
 
 .dropdown {
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 13px;
+  left: 13px;
   border: 1px solid black;
   border-radius: 2px;
 }
@@ -120,5 +120,28 @@ border-radius: 5px;}
   background-repeat: no-repeat;
   background-size: cover; 
   align-self: center;
+}
 
+/* printing */
+@media print {
+   .noprint {
+      visibility: hidden;
+   }
+}
+
+.print {
+  font-family: 'EB Garamond', serif;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #fff;
+  color: black;
+  padding: 0 2px;
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
